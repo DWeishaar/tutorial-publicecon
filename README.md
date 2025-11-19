@@ -4,8 +4,8 @@ This repository contains all materials for the applied course supplement to *Adv
 
 - Overview PDF — A high-level guide to the course structure, learning objectives, and workflow.
 
-- 01-slides/ — Tutorial slides for all sessions.
-- 02-code/ — Code solutions for in-class coding examples.
+- 01-slides/ - Tutorial slides for all sessions.
+- 02-code/ - Code solutions for in-class coding examples.
 - 03-output/ - Outputs produced in coding examples.
 - 04-data/ - Data used in coding examples.
 
