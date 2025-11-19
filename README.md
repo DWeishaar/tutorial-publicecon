@@ -1,6 +1,6 @@
 # Advanced Public Economics – Applied Tutorial
 
-This repository contains all materials for the applied course supplement to the lecture *Advanced Public Economics*. You find a general description of the course in the [Overview](Overview.pdf) document. Please make yourself familiar with this document and follow the instructions provided therein.
+This repository contains all materials for the applied course supplement to the lecture *Advanced Public Economics*. You find a general description of the course in the [Overview](overview.pdf) document. Please make yourself familiar with this document and follow the instructions provided therein.
 
 The remainder of the repository will be filled with slides and coding examples gradually over the course of the semester.
 
