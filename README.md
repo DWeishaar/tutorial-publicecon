@@ -1,5 +1,4 @@
-# Advanced Public Economics
-## Applied Tutorial
+# Advanced Public Economics - Applied Tutorial
 
 This repository contains all materials for the applied course supplement to *Advanced Public Economics*. It is organized into three main components:
 
