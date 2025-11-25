@@ -1,4 +1,6 @@
-04-data/raw/* 
+03-output/*
+04-data/* 
 .DS_Store
 .Rproj.user
 .Rhistory
+
