@@ -257,7 +257,7 @@ Sys.setenv("OPENAI_API_KEY" = "sk-proj-4iHfzA-kjNulfIMgmPTT_5eHPd-eC1JiqU5xdTLhn
 
 # Example: API Key for OPENAI for the connection of R to the model 
 
-Sys.setenv("OPENAI_API_KEY" = "XXX")
+Sys.setenv("OPENAI_API_KEY" = "")
 
 ## Chattr -------------------------------------------------------------------------
 
