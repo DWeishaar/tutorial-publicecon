@@ -9,4 +9,6 @@ The remainder of the repository will be filled with slides and coding examples g
 - **03-output/** – Outputs produced in coding examples.
 - **04-data/** – Data used in coding examples.
 
+Note: the output and data folders will not be synchronized with GitHub.
+
 In case of questions or feedback, please contact [Daniel Weishaar](mailto:d.weishaar@wiso.uni-koeln.de).
