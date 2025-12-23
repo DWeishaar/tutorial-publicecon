@@ -11,7 +11,7 @@ The remainder of the repository will be filled with slides and coding examples g
 
 *Note:* the output and data folders will not be synchronized with GitHub.
 
-*Assignment:* the assignment for the WS2025/2026 is available [here](assignment_advancedpublicecon_appliedtutorial_WS2025). The document is password protected. The password has been sent via E-Mail to all students registered via KLIPS.
+*Assignment:* the assignment for the WS2025/2026 is available [here](assignment_advancedpublicecon_appliedtutorial_WS2025.pdf). The document is password protected. The password has been sent via E-Mail to all students registered via KLIPS.
 
 
 In case of questions or feedback, please contact [Daniel Weishaar](mailto:d.weishaar@wiso.uni-koeln.de).
