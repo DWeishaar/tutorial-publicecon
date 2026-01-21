@@ -1,3 +1,5 @@
+# Session 03: Estimate Optimal Non-Linear Tax Rates
+
 # Preamble -------------------------------------------------------------------------
 
 library(tidyverse)
