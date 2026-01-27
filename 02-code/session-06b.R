@@ -1,6 +1,6 @@
 # Session 06: Microsimulation II
 
-# PART A: Here we look at singles without children
+# PART B: Here we look at singles with two children
 
 # In session 06 we use the gettsim microsimulation model to study effective marginal tax rates in Germany. 
 # The main execution of gettsim is presented in the jupyter notebook to this session. Here we only read 
@@ -14,12 +14,12 @@ library(readr) # read in csv files
 
 # Load Data from GETTSIM -------------------------------------------------------------------------
 
-data_gettsim_orig <- read_csv("./04-data/processed/df_merged.csv")
+data_gettsim_orig <- read_csv("./04-data/processed/df_merged_withchild.csv")
 
 data_gettsim_orig <- data_gettsim_orig %>%
   filter(arbeitsstunden_w==40)
 
-# Get tax and transfer componennt
+# Get tax and transfer componen
 
 data_gettsim <- data_gettsim_orig %>%
   mutate(earnings_y = einnahmen__bruttolohn_m * 12,
@@ -104,7 +104,7 @@ ggplot(data = gettsim_composition, aes(x = earnings_y, y = amount, fill = compon
   labs(
     x = "Annual Gross Earnings (EUR)",
     y = "Component Amount (EUR)",
-    title = "Single without children, decomposition of net tax liability",
+    title = "Single with two children, decomposition of net tax liability",
     fill = "",
     color = NULL
   ) +
@@ -116,7 +116,7 @@ ggplot(data = gettsim_composition, aes(x = earnings_y, y = amount, fill = compon
   )
 
 
-ggsave("03-output/gr_session06_05_gettsim_single_nochild_nettaxliability_decomposition_2025.pdf", width = 10, height = 6, dpi = 300)
+ggsave("03-output/gr_session06_07_gettsim_single_twochild_nettaxliability_decomposition_2025.pdf", width = 10, height = 6, dpi = 300)
 
 # Marginal tax rate -------------------------------------------------------------------------
 
@@ -139,8 +139,8 @@ data_gettsim <- data_gettsim %>%
   )
 
 # Correction regarding negative mtr
-# Sometimes, numerical approximation errors lead to negative EMTRs. 
-# We exclude this here, assign NA values and then interpolate them.
+# At the notches, where the tax liability decreases discontinuously, we have an infinitely negative EMTR. 
+# We exclude this here, because it is only relevant for one infinitely small income range 
 
 data_gettsim <- data_gettsim %>%
   mutate(emtr = if_else(emtr < 0, NA_real_, emtr))
@@ -202,7 +202,7 @@ ggplot(gettsim_emtr, aes(x = earnings_y, y = rate, color = component)) +
   labs(
     x = "Annual Gross Earnings (EUR)",
     y = "Rate",
-    title = "Single without children, EMTR and components by earnings",
+    title = "Single with two children, EMTR and components by earnings",
     color = NULL
   ) +
   theme_minimal() +
@@ -211,12 +211,12 @@ ggplot(gettsim_emtr, aes(x = earnings_y, y = rate, color = component)) +
   geom_hline(yintercept = 0) +
   guides(color = guide_legend(nrow = 4, byrow = FALSE))
 
-ggsave("03-output/gr_session06_06_gettsim_single_nochild_emtr_decomposition_2025.pdf", width = 10, height = 6, dpi = 300)
+ggsave("03-output/gr_session06_08_gettsim_single_twochild_emtr_decomposition_2025.pdf", width = 10, height = 6, dpi = 300)
 
 # Export data for reform analysis in session 07 -------------------------------------------------------------------------
 
-data_gettsim_nochild <- data_gettsim
-save(data_gettsim_nochild, file = "04-data/processed/data_gettsim_single_nochild_2025.RData")
+data_gettsim_twochild <- data_gettsim
+save(data_gettsim_twochild, file = "04-data/processed/data_gettsim_single_twochild_2025.RData")
 
 # Clean up  -------------------------------------------------------------------------
 
