@@ -13,5 +13,12 @@ The remainder of the repository will be filled with slides and coding examples g
 
 *Assignment:* the assignment for the WS2025/2026 is available [here](assignment_advancedpublicecon_appliedtutorial_WS2025.pdf). The document is password protected. The password has been sent via E-Mail to all students registered via KLIPS.
 
-
 In case of questions or feedback, please contact [Daniel Weishaar](mailto:d.weishaar@wiso.uni-koeln.de).
+
+### License
+This repository is licensed under the Creative Commons
+Attribution–NonCommercial 4.0 International License (CC BY-NC 4.0).
+
+Non-commercial use includes teaching, research, and personal study.
+Commercial use (e.g. paid courses, corporate training, textbooks sold for profit)
+is not permitted without permission.
