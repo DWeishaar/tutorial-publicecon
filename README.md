@@ -1,4 +1,4 @@
-# Advanced Public Economics
+# Empirical Public Economics and Policy Design
 
 This repository contains all materials for the applied course supplement to the lecture *Advanced Public Economics*. You find a general description of the course in the [Overview](overview.pdf) document. Please make yourself familiar with this document and follow the instructions provided therein.
 
@@ -14,6 +14,8 @@ The remainder of the repository will be filled with slides and coding examples g
 *Assignment:* the assignment for the WS2025/2026 is available [here](assignment_advancedpublicecon_appliedtutorial_WS2025.pdf). The document is password protected. The password has been sent via E-Mail to all students registered via KLIPS. The assignment is due on 10.02.2026, 23:59.
 
 In case of questions or feedback, please contact [Daniel Weishaar](mailto:d.weishaar@wiso.uni-koeln.de).
+
+This course was taught in WiSe 2025/26 under the name *Advanced Public Economics --- Empirics*.  
 
 ### License
 This repository is licensed under the Creative Commons
